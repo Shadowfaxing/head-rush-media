@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headrush Media | Content Creation & Digital Marketing Agency</title>
+    <meta name="description"
+        content="Premium content creation, videography, and digital marketing agency specializing in high-impact visuals and paid advertising.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Headrush Media | Content Creation & Agency">
+    <meta property="og:description"
+        content="Elevate your brand with premium videography and digital marketing strategies.">
+    <meta property="og:type" content="website">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Lucide Icons (via CDN for simplicity and variety) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Headrush Media Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/videos/Opening Day.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="fade-in">We Create <span class="text-yellow">Content</span> That Demands <span
+                    class="text-yellow">Attention</span>.</h1>
+            <p class="fade-in delay-1">Videography • Digital Marketing • Paid Advertising • Organic Growth</p>
+            <div class="hero-btns fade-in delay-2">
+                <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+                <a href="#contact" class="btn btn-outline">Scale Your Brand</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span>Our Expertise</span>
+                <h2>What We Do <span class="text-yellow">Best</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i data-lucide="video" class="text-yellow"></i>
+                    <h3>Content Creation</h3>
+                    <p>High-end videography and photography tailored for social media, TV, and web. We tell stories that
+                        convert.</p>
+                </div>
+                <div class="service-card active">
+                    <i data-lucide="trending-up" class="text-yellow"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Comprehensive strategies to grow your online presence from the ground up through organic and paid
+                        channels.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="target" class="text-yellow"></i>
+                    <h3>Paid Advertising</h3>
+                    <p>Targeted Meta and Google ad campaigns optimized for maximum ROI and lead generation.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="camera" class="text-yellow"></i>
+                    <h3>Creative Production</h3>
+                    <p>From conceptualization to final edit, we handle the entire production lifecycle of your brand's
+                        assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span>Portfolio</span>
+                <h2>Recent <span class="text-yellow">Projects</span></h2>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Cars -->
+                <div class="portfolio-item">
+                    <img src="assets/hero Photos/GT3 RS_Zwarkops-04112.jpg" alt="Automotive Production">
+                    <div class="portfolio-info">
+                        <h3>Automotive</h3>
+                        <p>Cinematic Showcase</p>
+                    </div>
+                </div>
+                <!-- Lifestyle -->
+                <div class="portfolio-item">
+                    <img src="assets/Lifestyle/DSC_1538.jpg" alt="Lifestyle Content">
+                    <div class="portfolio-info">
+                        <h3>Lifestyle</h3>
+                        <p>Brand Storytelling</p>
+                    </div>
+                </div>
+                <!-- Restaurant -->
+                <div class="portfolio-item">
+                    <img src="assets/Restaurants/DSC_0795.jpg" alt="Hospitality Marketing">
+                    <div class="portfolio-info">
+                        <h3>Hospitality</h3>
+                        <p>Restaurant Marketing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-outline">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Ready to <span class="text-yellow">Dominate?</span></h2>
+                    <p>Contact us today to discuss how we can scale your brand with premium content and strategic
+                        marketing.</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@headrushmedia.co</span>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="phone"></i>
+                            <span>+27 (0) 123 4567</span>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Johannesburg, South Africa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="hr-contact">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="videography">Videography</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="ads">Paid Advertising</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Headrush Media Logo">
+                <p>Pushing boundaries, creating legends.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-social">
+                <h4>Social</h4>
+                <div class="social-icons">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Headrush Media. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
