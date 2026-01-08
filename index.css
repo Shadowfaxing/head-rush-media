@@ -325,6 +325,43 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-weight: 700;
+    transition: var(--transition-slow);
+}
+
+.hero-btns-flair .btn:hover {
+    transform: scale(1.05) translateX(10px);
+}
+
+/* Hero Footer Labels */
+.hero-footer-labels {
+    position: absolute;
+    bottom: 60px;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.footer-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label-num {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.label-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: capitalize;
 }
 
 /* Trusted By Bar */
