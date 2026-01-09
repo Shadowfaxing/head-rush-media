@@ -108,14 +108,31 @@ video {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: #000;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    /* Ensure text is readable/standardized if needed, but keeping user snippet priority */
+    font-weight: 700;
+    /* Keeping bold from original theme for consistency */
 }
 
 .btn-primary:hover {
-    background-color: #fff;
+    border: 1px solid white;
+    background: #e8e8e8;
+    /* Maintain bg */
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+    /* Keep slight lift if desired, or remove to match snippet strictly? Snippet has no transform. I will remove transform to match snippet strictly initially. */
+    transform: none;
+}
+
+.btn-primary:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
 .btn-outline {
@@ -202,8 +219,9 @@ section {
     border: 1px solid var(--primary-color);
     border-radius: 50%;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 100000;
     transform: translate(-50%, -50%);
+    pointer-events: none;
     transition: width 0.3s, height 0.3s, background 0.3s;
     mix-blend-mode: difference;
 }
@@ -295,6 +313,49 @@ section {
     height: 100% !important;
 }
 
+/* Hide Unicorn Studio Branding - Nuclear Option */
+/* Parallax Hero Image */
+.hero-image-parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/hero Photos/GT3 RS_Zwarkops-04112.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    transform: scale(1.1);
+    /* Zoomed in to allow for movement edges */
+    transition: transform 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Smooth follow */
+    will-change: transform;
+}
+
+#hero-bg-red {
+    background-image: url('assets/hero Photos/GT3 RS_Zwarkops-04112.jpg');
+    mix-blend-mode: screen;
+    filter: opacity(0.5) saturate(200%) hue-rotate(-10deg) blur(2px);
+    z-index: 2;
+    /* Red/Cyan split simulation */
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(circle 0px at 0 0, black, transparent);
+    mask-image: radial-gradient(circle 0px at 0 0, black, transparent);
+}
+
+#hero-bg-blue {
+    background-image: url('assets/hero Photos/GT3 RS_Zwarkops-04112.jpg');
+    mix-blend-mode: screen;
+    filter: opacity(0.5) saturate(200%) hue-rotate(190deg) blur(2px);
+    z-index: 3;
+    /* Cyan/Red split simulation */
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(circle 0px at 0 0, black, transparent);
+    mask-image: radial-gradient(circle 0px at 0 0, black, transparent);
+}
+
+/* Cleanup: hidden unicorn styles removed */
+
 .hero-overlay.flair-gradient {
     position: absolute;
     top: 0;
@@ -341,8 +402,8 @@ section {
 }
 
 .hero-btns-flair .btn {
-    padding: 1.25rem 2.5rem;
-    border-radius: 50px;
+    /* padding: 1.25rem 2.5rem; -- Let new style dictate padding */
+    /* border-radius: 50px; -- Let new style dictate shape */
     display: flex;
     align-items: center;
     gap: 1rem;
