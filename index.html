@@ -4,195 +4,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headrush Media | Content Creation & Digital Marketing Agency</title>
+    <title>Head Rush Media | Video Production & Digital Marketing Agency</title>
     <meta name="description"
-        content="Premium content creation, videography, and digital marketing agency specializing in high-impact visuals and paid advertising.">
+        content="We build brands that convert with cinematic content and strategic marketing. Video production, digital marketing, and creative direction in Johannesburg.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Headrush Media | Content Creation & Agency">
+    <meta property="og:title" content="Head Rush Media | Video Production & Digital Marketing">
     <meta property="og:description"
-        content="Elevate your brand with premium videography and digital marketing strategies.">
+        content="We build brands that convert with cinematic content and strategic marketing.">
     <meta property="og:type" content="website">
 
     <!-- Styles -->
     <link rel="stylesheet" href="index.css">
 
-    <!-- Lucide Icons (via CDN for simplicity and variety) -->
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <div class="custom-cursor"></div>
-
-    <!-- Header / Navigation -->
+    <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-content">
             <div class="logo">
-                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Headrush Media Logo">
+                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Head Rush Media Logo">
             </div>
             <nav class="nav-links">
-                <a href="#hero">Home</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+                <a href="#contact" class="btn btn-primary">Book a Call</a>
+                <button class="menu-toggle" id="mobile-menu">
+                    <i data-lucide="menu"></i>
+                </button>
             </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <i data-lucide="menu"></i>
-            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="hero-video-container">
-            <div class="hero-image-parallax" id="hero-bg-red"></div>
-            <div class="hero-image-parallax" id="hero-bg-blue"></div>
-            <div class="hero-image-parallax" id="hero-bg"></div>
-            <div class="hero-overlay flair-gradient"></div>
-        </div>
-        <div class="container hero-content-flair">
-            <div class="hero-left">
-                <span class="hero-intro fade-in">Hey, We Are</span>
-                <h1 class="hero-title fade-in delay-1">Creative<br><span class="text-yellow">Directors</span></h1>
+        <div class="container hero-content">
+            <h1 class="hero-title">Cinematic content that stops the scroll. Strategy that drives results.</h1>
+            <div class="hero-tags">
+                <span>video production</span>
+                <span>digital marketing</span>
+                <span>creative direction</span>
+                <span>brand strategy</span>
             </div>
-            <div class="hero-right fade-in delay-2">
-                <p class="hero-subtitle">Great design should feel invisible.<br>From vision to reality, we build brands
-                    that connect and convert.</p>
-                <div class="hero-btns-flair">
-                    <a href="#contact" class="btn btn-primary">Get In Touch <i data-lucide="arrow-right"></i></a>
+            <a href="#contact" class="btn btn-primary btn-large">Book a Call</a>
+        </div>
+
+        <div class="hero-images">
+            <!-- Left Column - Scrolls Up -->
+            <div class="image-column scroll-up">
+                <div class="image-track">
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/GT3 RS_Zwarkops-04112.jpg" alt="Automotive Production">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/Lifestyle/DSC_1538.jpg" alt="Lifestyle Content">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/DWSSC_Dec.23_23_Final-08796.jpg" alt="Event Coverage">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/Cars/DSC_4536.JPG" alt="Automotive Detail">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/GT3 RS_Zwarkops-04112.jpg" alt="Automotive Production">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/Lifestyle/DSC_1538.jpg" alt="Lifestyle Content">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/DWSSC_Dec.23_23_Final-08796.jpg" alt="Event Coverage">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/Cars/DSC_4536.JPG" alt="Automotive Detail">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row hero-footer-labels fade-in delay-3">
-            <div class="footer-label">
-                <span class="label-num">#01</span>
-                <span class="label-text">Brand Strategy</span>
+
+            <!-- Right Column - Scrolls Down -->
+            <div class="image-column scroll-down">
+                <div class="image-track">
+                    <div class="hero-img">
+                        <img src="assets/Restaurants/DSC_0795.jpg" alt="Hospitality Marketing">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/DWSSC_Dec.23_23_Final-9366.jpg" alt="Event Production">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/IMG_0150.JPG" alt="Creative Content">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/Artboard 13.png" alt="Brand Design">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="hero-img">
+                        <img src="assets/Restaurants/DSC_0795.jpg" alt="Hospitality Marketing">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/DWSSC_Dec.23_23_Final-9366.jpg" alt="Event Production">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/IMG_0150.JPG" alt="Creative Content">
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/hero Photos/Artboard 13.png" alt="Brand Design">
+                    </div>
+                </div>
             </div>
-            <div class="footer-label">
-                <span class="label-num">#02</span>
-                <span class="label-text">Cinematic Production</span>
-            </div>
-            <div class="footer-label">
-                <span class="label-num">#03</span>
-                <span class="label-text">Digital Growth</span>
-            </div>
-            <div class="footer-label">
-                <span class="label-num">#04</span>
-                <span class="label-text">Creative Direction</span>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-            <span>Scroll</span>
+
+            <!-- Fade overlays -->
+            <div class="fade-overlay fade-top"></div>
+            <div class="fade-overlay fade-bottom"></div>
         </div>
     </section>
 
-    <!-- Trusted By Bar -->
-    <section class="trusted-by">
-        <div class="container trusted-content">
-            <span class="trusted-text">Trusted by Brands We've Helped Shape</span>
-            <div class="brand-row">
-                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Brand Logo" class="brand-logo grayscale">
-                <!-- Add more brand logos here as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <span>Our Expertise</span>
-                <h2>What We Do <span class="text-yellow">Best</span></h2>
+            <span class="section-label">ABOUT HEAD RUSH</span>
+            <h2 class="section-title">We help brands dominate with high-impact video content</h2>
+            <a href="#services" class="btn btn-outline">More about us</a>
+        </div>
+    </section>
+
+    <!-- Services Showcase Section -->
+    <section id="services-showcase" class="services-showcase">
+        <div class="container showcase-container">
+            <div class="showcase-left">
+                <span class="section-label">WHAT WE DO</span>
+                <h2 class="section-title">Expertise that performs</h2>
+                <p class="showcase-intro">Every brand moves differently. That's why we develop solutions built on
+                    insight, expertise, and a sharp understanding of your goals. Our strategic, creative, and
+                    technological disciplines strengthen one another giving you an approach that aligns precisely with
+                    the growth you want to achieve.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i data-lucide="video" class="text-yellow"></i>
-                    <h3>Content Creation</h3>
-                    <p>High-end videography and photography tailored for social media, TV, and web. We tell stories that
-                        convert.</p>
+
+            <div class="showcase-right">
+                <div class="service-showcase-item"
+                    data-image="assets/Services/Video Production & Cinematography/DSC_4340.webp">
+                    <div class="service-number">01</div>
+                    <div class="service-details">
+                        <h3>Video Production & Cinematography</h3>
+                        <p>Cinematic content that captures attention and tells your story. From concept to final cut, we
+                            create broadcast-quality video.</p>
+                    </div>
+                    <div class="service-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </div>
                 </div>
-                <div class="service-card active">
-                    <i data-lucide="trending-up" class="text-yellow"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Comprehensive strategies to grow your online presence from the ground up through organic and paid
-                        channels.</p>
+
+                <div class="service-showcase-item"
+                    data-image="assets/Services/Digital Marketing/adem-ay-Tk9m_HP4rgQ-unsplash.jpg">
+                    <div class="service-number">02</div>
+                    <div class="service-details">
+                        <h3>Digital Marketing & Growth</h3>
+                        <p>Marketing that expands your reach and delivers conversions. From campaigns to automation,
+                            everything works together.</p>
+                    </div>
+                    <div class="service-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <i data-lucide="target" class="text-yellow"></i>
-                    <h3>Paid Advertising</h3>
-                    <p>Targeted Meta and Google ad campaigns optimized for maximum ROI and lead generation.</p>
+
+                <div class="service-showcase-item"
+                    data-image="assets/Services/Brand Stratergy & Creative Direction/mk-2-ypeZtZBUW6E-unsplash.jpg">
+                    <div class="service-number">03</div>
+                    <div class="service-details">
+                        <h3>Brand Strategy & Creative Direction</h3>
+                        <p>Strategic foundations that position your brand for success. We develop unique strategies that
+                            push boundaries.</p>
+                    </div>
+                    <div class="service-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <i data-lucide="camera" class="text-yellow"></i>
-                    <h3>Creative Production</h3>
-                    <p>From conceptualization to final edit, we handle the entire production lifecycle of your brand's
-                        assets.</p>
+
+                <div class="service-showcase-item" data-image="assets/hero Photos/DWSSC_Dec.23_23_Final-08796.jpg">
+                    <div class="service-number">04</div>
+                    <div class="service-details">
+                        <h3>Photography & Visual Production</h3>
+                        <p>High-impact visuals that showcase your brand at its best. Professional photography that
+                            commands attention.</p>
+                    </div>
+                    <div class="service-arrow">
+                        <i data-lucide="arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Floating preview image -->
+                <div class="preview-image" id="preview-image">
+                    <img src="" alt="Service Preview">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+
+    <!-- Our Work Section -->
+    <section id="our-work" class="our-work">
         <div class="container">
-            <div class="section-header">
-                <span>Portfolio</span>
-                <h2>Recent <span class="text-yellow">Projects</span></h2>
-            </div>
-            <div class="portfolio-grid">
-                <!-- Cars -->
-                <div class="portfolio-item">
-                    <img src="assets/hero Photos/GT3 RS_Zwarkops-04112.jpg" alt="Automotive Production">
-                    <div class="portfolio-info">
-                        <h3>Automotive</h3>
-                        <p>Cinematic Showcase</p>
+            <span class="section-label">PORTFOLIO</span>
+            <h2 class="section-title">Our Work</h2>
+
+            <div class="work-grid">
+                <div class="work-item" data-primary="assets/Cars/GT3 RS_Zwarkops-04113.jpg"
+                    data-hover="assets/Cars/GT3 RS_Zwarkops-04029.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Cars/GT3 RS_Zwarkops-04113.jpg"
+                            alt="Automotive Photography">
+                        <img class="hover-img" src="assets/Cars/GT3 RS_Zwarkops-04029.jpg"
+                            alt="Automotive Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-br"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Restaurants/DSC_0795.jpg"
+                    data-hover="assets/Restaurants/DSC_0904.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Restaurants/DSC_0795.jpg" alt="Restaurant Photography">
+                        <img class="hover-img" src="assets/Restaurants/DSC_0904.jpg" alt="Restaurant Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
                     </div>
                 </div>
-                <!-- Lifestyle -->
-                <div class="portfolio-item">
-                    <img src="assets/Lifestyle/DSC_1538.jpg" alt="Lifestyle Content">
-                    <div class="portfolio-info">
-                        <h3>Lifestyle</h3>
-                        <p>Brand Storytelling</p>
+
+                <div class="work-item" data-primary="assets/Lifestyle/DSC_1538.jpg"
+                    data-hover="assets/Lifestyle/DSC_1749.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Lifestyle/DSC_1538.jpg" alt="Lifestyle Photography">
+                        <img class="hover-img" src="assets/Lifestyle/DSC_1749.jpg" alt="Lifestyle Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-tl"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Cars/GMMG - BMW-1692.JPG"
+                    data-hover="assets/Cars/GMMG - BMW-1695.JPG">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Cars/GMMG - BMW-1692.JPG" alt="BMW Photography">
+                        <img class="hover-img" src="assets/Cars/GMMG - BMW-1695.JPG" alt="BMW Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-br"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Restaurants/DSC_1117.jpg"
+                    data-hover="assets/Restaurants/DSC_1147.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Restaurants/DSC_1117.jpg" alt="Food Photography">
+                        <img class="hover-img" src="assets/Restaurants/DSC_1147.jpg" alt="Food Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
                     </div>
                 </div>
-                <!-- Restaurant -->
-                <div class="portfolio-item">
-                    <img src="assets/Restaurants/DSC_0795.jpg" alt="Hospitality Marketing">
-                    <div class="portfolio-info">
-                        <h3>Hospitality</h3>
-                        <p>Restaurant Marketing</p>
+
+                <div class="work-item" data-primary="assets/Lifestyle/DSC_1803.jpg"
+                    data-hover="assets/Lifestyle/DSC_1919.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Lifestyle/DSC_1803.jpg" alt="Portrait Photography">
+                        <img class="hover-img" src="assets/Lifestyle/DSC_1919.jpg" alt="Portrait Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-tl"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Cars/DSC_4536.JPG" data-hover="assets/Cars/DSC_4428.JPG">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Cars/DSC_4536.JPG" alt="Car Detail">
+                        <img class="hover-img" src="assets/Cars/DSC_4428.JPG" alt="Car Detail Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-br"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Restaurants/DSC_5603.JPG"
+                    data-hover="assets/Restaurants/DSC_5610.JPG">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Restaurants/DSC_5603.JPG" alt="Dining Experience">
+                        <img class="hover-img" src="assets/Restaurants/DSC_5610.JPG" alt="Dining Experience Hover">
+                        <canvas class="liquid-canvas"></canvas>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-cta">
-                <a href="#contact" class="btn btn-outline">Start Your Project</a>
+
+                <div class="work-item" data-primary="assets/Lifestyle/DSC_2121.jpg"
+                    data-hover="assets/Lifestyle/DSC_2361.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Lifestyle/DSC_2121.jpg" alt="Fashion Photography">
+                        <img class="hover-img" src="assets/Lifestyle/DSC_2361.jpg" alt="Fashion Photography Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-tl"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Cars/RS3_Edits_Photos-08920.jpg"
+                    data-hover="assets/Cars/RS3_Edits_Photos-08957.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Cars/RS3_Edits_Photos-08920.jpg" alt="Audi RS3">
+                        <img class="hover-img" src="assets/Cars/RS3_Edits_Photos-08957.jpg" alt="Audi RS3 Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-br"></span>
+                </div>
+
+                <div class="work-item" data-primary="assets/Restaurants/DSC_0951.jpg"
+                    data-hover="assets/Restaurants/DSC_0962.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Restaurants/DSC_0951.jpg" alt="Culinary Art">
+                        <img class="hover-img" src="assets/Restaurants/DSC_0962.jpg" alt="Culinary Art Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                </div>
+
+                <div class="work-item" data-primary="assets/Lifestyle/DSC_4024.jpg"
+                    data-hover="assets/Lifestyle/DSC_8883.jpg">
+                    <div class="work-image-container">
+                        <img class="primary-img" src="assets/Lifestyle/DSC_4024.jpg" alt="Creative Content">
+                        <img class="hover-img" src="assets/Lifestyle/DSC_8883.jpg" alt="Creative Content Hover">
+                        <canvas class="liquid-canvas"></canvas>
+                    </div>
+                    <span class="accent-curve curve-tl"></span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact" class="contact">
         <div class="container">
+            <h2 class="section-title">Ready to dominate?</h2>
+            <p class="contact-intro">Contact us today to discuss how we can scale your brand with premium content and
+                strategic marketing.</p>
+
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>Ready to <span class="text-yellow">Dominate?</span></h2>
-                    <p>Contact us today to discuss how we can scale your brand with premium content and strategic
-                        marketing.</p>
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <i data-lucide="mail"></i>
-                            <span>info@headrushmedia.co.za</span>
-                        </div>
-                        <div class="detail-item">
-                            <i data-lucide="phone"></i>
-                            <span>+27 82 491 4425</span>
-                        </div>
-                        <div class="detail-item">
-                            <i data-lucide="map-pin"></i>
-                            <span>Johannesburg, South Africa</span>
-                        </div>
+                    <div class="detail-item">
+                        <i data-lucide="mail"></i>
+                        <span>info@headrushmedia.co.za</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="phone"></i>
+                        <span>+27 82 491 4425</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Johannesburg, South Africa</span>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -206,9 +361,9 @@
                         <div class="form-group">
                             <select required>
                                 <option value="" disabled selected>Select Service</option>
-                                <option value="videography">Videography</option>
+                                <option value="videography">Video Production</option>
                                 <option value="marketing">Digital Marketing</option>
-                                <option value="ads">Paid Advertising</option>
+                                <option value="strategy">Brand Strategy</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -225,7 +380,7 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Headrush Media Logo">
+                <img src="assets/Logos/Headrush Logo_Main White.png" alt="Head Rush Media Logo">
                 <p>Pushing boundaries, creating legends.</p>
             </div>
             <div class="footer-links">
@@ -236,14 +391,15 @@
             <div class="footer-social">
                 <h4>Social</h4>
                 <div class="social-icons">
-                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="https://www.instagram.com/headrush_media/" target="_blank" rel="noopener noreferrer"><i
+                            data-lucide="instagram"></i></a>
                     <a href="#"><i data-lucide="facebook"></i></a>
                     <a href="#"><i data-lucide="linkedin"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Headrush Media. All Rights Reserved.</p>
+            <p>&copy; 2026 Head Rush Media. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -253,8 +409,6 @@
         // Initialize Lucide Icons
         lucide.createIcons();
     </script>
-    <!-- Unicorn Studio Script -->
-
 </body>
 
 </html>
