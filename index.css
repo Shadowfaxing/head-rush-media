@@ -235,33 +235,39 @@ section {
     gap: 1.5rem;
 }
 
-/* Scroll Up Animation */
+/* Scroll Up Animation - Optimized */
 .scroll-up .image-track {
     animation: scrollUp 40s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
+    /* GPU acceleration */
 }
 
 @keyframes scrollUp {
     0% {
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
     }
 
     100% {
-        transform: translateY(-50%);
+        transform: translate3d(0, -50%, 0);
     }
 }
 
-/* Scroll Down Animation */
+/* Scroll Down Animation - Optimized */
 .scroll-down .image-track {
     animation: scrollDown 40s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
+    /* GPU acceleration */
 }
 
 @keyframes scrollDown {
     0% {
-        transform: translateY(-50%);
+        transform: translate3d(0, -50%, 0);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -273,6 +279,8 @@ section {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     transition: var(--transition-smooth);
     flex-shrink: 0;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .hero-img img {
@@ -471,16 +479,19 @@ section {
     overflow: hidden;
     pointer-events: none;
     opacity: 0;
-    transform: scale(0.8) rotate(-5deg);
+    transform: scale(0.8) rotate(-5deg) translateZ(0);
     transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 1000;
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 215, 0, 0.3);
+    will-change: transform, opacity;
+    left: 0;
+    top: 0;
 }
 
 .preview-image.active {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg) translateZ(0);
 }
 
 .preview-image img {
@@ -525,6 +536,8 @@ section {
     border-radius: 16px;
     cursor: pointer;
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 /* Offset pattern - alternating rows pushed down */
@@ -678,6 +691,8 @@ section {
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .work-item .primary-img {
